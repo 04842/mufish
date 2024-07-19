@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuFish</title>
+    <meta
+      name="keywords"
+      content="敲電子木魚,自積累功德,見機甲如來,得賽博真經,功德+1"
+    />
+    <meta
+      name="description"
+      content="敲電子木魚，使用自動功德機，見機甲如來，修賽博真經。無登即可每日敲木魚，每敲一下功德+1，心中的雜念似乎也減少了呢。"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://registry.npmmirror.com/font-awesome/4.7.0/files/css/font-awesome.min.css"
+    />
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a9430a37066911650e26adadcc42798a";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	<script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+	<script>LA.init({id:"JxVJPIpe3UAQqoDx",ck:"JxVJPIpe3UAQqoDx"})</script>
+	<!-- Google廣告 -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7056167681359419" crossorigin="anonymous"></script>
+  </head>
 
+  <body data-theme="dark">
+    <header id="headerTag">
+      <h2>MuFish</h2>
+      <p>敲電子木魚，見機械如來，得賽博真經</p>
+      <nav class="navList">
+        <button
+          type="button"
+          id="lightOrDarkModelBtn"
+          title="晝夜模式"
+          onclick="lightOrDarkModel()"
+        >
+          <i class="fa fa-moon-o" id="lightOrDarkIcon"></i>
+        </button>
+        <button
+          type="button"
+          id="settingsBtn"
+          title="更多設定"
+          onclick="settingsBoxDisplay()"
+        >
+          <i class="fa fa-gear" id="settingsIcon"></i>
+        </button>
+      </nav>
+    </header>
+    <main id="mainTag">
+      <section id="muyvSection">
+        <p>功德</p>
+        <p>🙏&nbsp;<span id="spanTag">0</span>&nbsp;🙏🏻</p>
+        <div id="gongDePlus"></div>
+        <img
+          id="muyvImg"
+          src="img/muyv.webp"
+          alt="木鱼"
+          onclick="muyvAudioFunction()"
+        />
+      </section>
+    </main>
+    <div id="settingsBox">
+      <span id="settingsBoxExitIcon" onclick="settingsBoxDisplay()"
+        ><i class="fa fa-close"></i
+      ></span>
+      <h2>設定</h2>
+      <p>在此設定專屬於你的木魚</p>
+      <hr />
+      <h3>常用</h3>
+      <button type="button" id="btnChangeAudio" onclick="GautamaLaugh()">
+        佛祖陪你笑
+      </button>
+      <button type="button" id="btnChangeAudio" onclick="autoClick()">
+        自動積功德
+      </button>
+      <hr />
+      <h3>木鱼音效（-20功德）</h3>
+      <button type="button" id="btnChangeAudio" onclick="changeAudio(1)">
+        濃厚
+      </button>
+      <button type="button" id="btnChangeAudio" onclick="changeAudio(2)">
+        清脆
+      </button>
+      <button type="button" id="btnChangeAudio" onclick="changeAudio(3)">
+        坤音
+      </button>
+      <hr />
+      <h3>背景音乐</h3>
+      <audio
+        src="https://music.163.com/song/media/outer/url?id=1373604201.mp3"
+        controls
+        preload="metadata"
+        loop
+      ></audio>
+      <audio
+        src="https://music.163.com/song/media/outer/url?id=1807844939.mp3"
+        controls
+        preload="metadata"
+        loop
+      ></audio>
+      <audio
+        src="https://music.163.com/song/media/outer/url?id=1340439829.mp3"
+        controls
+        preload="metadata"
+        loop
+      ></audio>
+      <audio
+        src="https://music.163.com/song/media/outer/url?id=1827001911.mp3"
+        controls
+        preload="metadata"
+        loop
+      ></audio>
+    </div>
+    <footer id="footerTag">
+      <div id="footer-wrap">
+        <p>電腦可使用空白鍵敲擊~</p>
+        <p>
+          訪問量&nbsp;<span id="busuanzi_value_site_pv">null</span
+          >&nbsp;次，訪客数&nbsp;<span id="busuanzi_value_site_uv">null</span
+          >&nbsp;次
+        </p>
+        <p class="copyright">
+          <a          >
+        </p>
+      </div>
+    </footer>
+    <div id="mask"></div>
+    <script src="./js/audio.js"></script>
+    <script src="./js/main.js"></script>
+    <script
+      async
+      src="//registry.npmmirror.com/busuanzi/latest/files/bsz.pure.mini.js"
+    ></script>
+  </body>
+</html>
